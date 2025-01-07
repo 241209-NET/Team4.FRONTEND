@@ -3,16 +3,16 @@
 E-Commerce Portal:
 
 We are building ECommerce Portal (That is user centric), for online shoppers for grocery and other house hold items.
-We are building front-end using React/Java script
+We are building front-end using React/Java script, CSS
 Backend is C#, SQL server
 
-    Team Members:
-    Alex Piccolo
-    Ethan Catania
-    Jude Hoekstra
-    Vamsi Gurram
+Team Members:
+Alex Piccolo
+Ethan Catania
+Jude Hoekstra
+Vamsi Gurram
 
-Front End:
+MVP:
 
     1. User should be able to login. Simple auth.
     2. User hits the page and see home page, with Top Navigation Bar, listing different categories
@@ -26,6 +26,11 @@ Front End:
     5. User checks-out the selected item.
         a. Once checkout is completed, display message that items will be shipped via Courier.
         b. While checking out, use the 3rd party API, to check if Postal address is correct or NOT.
+
+External API:
+When Users type the Postall Address, we will use external API, to validate if address is correct or NOT.
+https://secure.shippingapis.com/ShippingAPI.dll
+Source: https://medium.com/@ieplt/how-to-validate-addresses-using-usps-api-in-asp-net-a-step-by-step-guide-f48a38ebd0f5
 
 Stretch Goal:
 
@@ -63,3 +68,6 @@ Xunit Test:
 Test cases
 
 Work Distribution:
+
+Project management system:
+We will be using Github Projects.
