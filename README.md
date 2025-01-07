@@ -1,7 +1,10 @@
 # Team4.FRONTEND
 
 E-Commerce Portal:
-User - centric Portal
+
+We are building ECommerce Portal (That is user centric), for online shoppers for grocery and other house hold items.
+We are building front-end using React/Java script
+Backend is C#, SQL server
 
     Team Members:
     Alex Piccolo
@@ -25,6 +28,8 @@ Front End:
         b. While checking out, use the 3rd party API, to check if Postal address is correct or NOT.
 
 Stretch Goal:
+
+We can Add lot more functionality to this Ecommerce Portal. Listed a few below for stretch Goal.
 
     1. Search Bar
     2. User Login via authentication provider
