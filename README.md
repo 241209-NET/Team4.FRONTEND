@@ -2,7 +2,7 @@
 
 ## E-Commerce Portal:
 
-This E-Commerce portal is a full-stack user centric application that allows a user to browse and purchase with a large variety of products. A user can 
+This E-Commerce portal is a full-stack user centric application that allows a user to browse and purchase with a large variety of products. A user can
 create a new account, access an existing account, browse products sorted by department, add products to the cart,
 and modify and checkout with their order. The Portal is cloud hosted and utilizes the Smarty Streets API to verify inputted addresses.
 
@@ -59,7 +59,6 @@ We can Add lot more functionality to this Ecommerce Portal. Listed a few below f
 
 ![E-Commerce ERD](https://github.com/user-attachments/assets/dbcaaa75-ef15-4624-87c5-00434d7a8f35)
 
-
 ## Controller API's:
 
 1. List all users (GET ALL)
@@ -81,6 +80,21 @@ We can Add lot more functionality to this Ecommerce Portal. Listed a few below f
 To be Added later
 
 ## Work Distribution:
+
+- Alex Piccolo
+  - Set up the DB in cloud
+  - Users
+  - Add the DB context
+- Ethan Catania
+  - Adding content to readme
+  - ERD Diagram
+  - Order
+- Jude Hoekstra
+  - Create React Project
+  - Item
+- Vamsi Gurram
+  - Create initial ASP.NET Webapi
+  - Department
 
 ## Project management system:
 
