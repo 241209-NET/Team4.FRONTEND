@@ -57,7 +57,8 @@ We can Add lot more functionality to this Ecommerce Portal. Listed a few below f
 
 ## ERD Diagram:
 
-![ERD](./ECommerce1.png)
+![E-Commerce ERD](https://github.com/user-attachments/assets/dbcaaa75-ef15-4624-87c5-00434d7a8f35)
+
 
 ## Controller API's:
 
