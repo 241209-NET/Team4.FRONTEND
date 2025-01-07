@@ -33,7 +33,8 @@ Stretch Goal:
 
 Database:
 
-ERD Diagram
+ERD Diagram:
+![ERD](./ECommerce.png)
 
 Back-End Code: C#
 
