@@ -70,4 +70,4 @@ Test cases
 Work Distribution:
 
 Project management system:
-We will be using Github Projects.
+We will be using Github Projects with Daily status updates, Via Teams
