@@ -2,15 +2,16 @@
 
 E-Commerce Portal:
 
-We are building ECommerce Portal (That is user centric), for online shoppers for grocery and other house hold items.
-We are building front-end using React/Java script, CSS
-Backend is C#, SQL server
+- We are building ECommerce Portal (That is user centric), for online shoppers for grocery and other house hold items.
+- We are building front-end using React/Java script, CSS
+- Backend is C#, SQL server
 
 Team Members:
-Alex Piccolo
-Ethan Catania
-Jude Hoekstra
-Vamsi Gurram
+
+- Alex Piccolo
+- Ethan Catania
+- Jude Hoekstra
+- Vamsi Gurram
 
 MVP:
 
@@ -28,9 +29,10 @@ MVP:
         b. While checking out, use the 3rd party API, to check if Postal address is correct or NOT.
 
 External API:
-When Users type the Postall Address, we will use external API, to validate if address is correct or NOT.
-https://secure.shippingapis.com/ShippingAPI.dll
-Source: https://medium.com/@ieplt/how-to-validate-addresses-using-usps-api-in-asp-net-a-step-by-step-guide-f48a38ebd0f5
+
+- When Users type the Postall Address, we will use external API, to validate if address is correct or NOT.
+- https://secure.shippingapis.com/ShippingAPI.dll
+- Source: https://medium.com/@ieplt/how-to-validate-addresses-using-usps-api-in-asp-net-a-step-by-step-guide-f48a38ebd0f5
 
 Stretch Goal:
 
@@ -65,9 +67,9 @@ Controller:
 13. CompleteCheckout()
 
 Xunit Test:
-Test cases
+To be Added later
 
 Work Distribution:
 
-Project management system:
-We will be using Github Projects with Daily status updates, Via Teams
+- Project management system:
+- We will be using Github Projects with Daily status updates, Via Teams
