@@ -39,7 +39,7 @@ We can Add lot more functionality to this Ecommerce Portal. Listed a few below f
 Database:
 
 ERD Diagram:
-![ERD](./ECommerce.png)
+![ERD](./ECommerce1.png)
 
 Back-End Code: C#
 
