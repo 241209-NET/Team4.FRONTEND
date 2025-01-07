@@ -37,7 +37,21 @@ ERD Diagram
 
 Back-End Code: C#
 
-Controller: 1. List all users (GET ALL) 2. Add user (POST User) 3. Check_UserCreds() (GET user_name/password) 4. List All Departments (GET) 5. List All Items in DepartmentById (GET {id}) 6. List an ItemById(GET {id}) 7. Get ItemsInStock(Get) 8. AddItemToCart(POST {Item}) 9. DeleteItemFromCart(Delete) 10. UpdateItemInCart(Patch ) 11. GetItemsTotal() 12. GetOrderStatus(GET OrderID) 13. CompleteCheckout()
+Controller:
+
+1. List all users (GET ALL)
+2. Add user (POST User)
+3. Check_UserCreds() (GET user_name/password)
+4. List All Departments (GET)
+5. List All Items in DepartmentById (GET {id})
+6. List an ItemById(GET {id})
+7. Get ItemsInStock(Get)
+8. AddItemToCart(POST {Item})
+9. DeleteItemFromCart(Delete)
+10. UpdateItemInCart(Patch )
+11. GetItemsTotal()
+12. GetOrderStatus(GET OrderID)
+13. CompleteCheckout()
 
 Xunit Test:
 Test cases
