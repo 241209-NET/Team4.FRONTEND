@@ -3,11 +3,11 @@
 E-Commerce Portal:
 User - centric Portal
 
-Team Members:
-Alex Piccolo
-Ethan Catania
-Jude Hoekstra
-Vamsi Gurram
+    Team Members:
+    Alex Piccolo
+    Ethan Catania
+    Jude Hoekstra
+    Vamsi Gurram
 
 Front End:
 
