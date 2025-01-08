@@ -103,7 +103,7 @@ To be Added later
 
 ## Front End
 
-- User login Page:
+- User login Page: (Ethan)
 
   - Username textbox
   - password textbox
@@ -111,7 +111,7 @@ To be Added later
   - register button
   - Color palette
 
-- Main Shopping Page
+- Main Shopping Page (Vavigation - Jude, itemlist - Vamsi)
 
   - 2 Frames/Panels
   - 1st one is navigation bar with list of Departments, Shopping cart icon along with displaying count of items in basket, Username, logout
@@ -119,11 +119,25 @@ To be Added later
   - 3rd (stretch goal), to add filters
   - Color palette
 
-- Checkout Page
+- Checkout Page (Alex)
   - 1 panel, listing all items in shopping cart, with total, submit/complete button
   - Will open another panel at the bottom, to fill in the address details, which needs validation VIA external API
   - color palette
 
 ## Backend DB
 
-    - Lading tables with data.
+    - Loading tables with data. get 10 items in each category
+    - Vamsi (Books, Electronics)
+    - Alex (Kitchen ware, toiletries)
+    - Ethan (Clothing, Furniture)
+    - Jude (Groceries, Pharmacy)
+    - For images, lets store them on frontend (in images folder) with same name as item name.png
+
+## ASP.net
+
+    - Models
+    - Controller
+    - Service
+    - repository
+    - data
+    - Test cases
