@@ -57,7 +57,8 @@ We can Add lot more functionality to this Ecommerce Portal. Listed a few below f
     6. Validation of username (Valid email, Unique for each user)
 
 ## ERD Diagram:
-![E-Commerce ERD (1)](https://github.com/user-attachments/assets/b166d4d1-9762-4391-b69b-1f8d90a3df4b)
+
+![E-Commerce ERD (2)](https://github.com/user-attachments/assets/73c1a68b-0c17-4828-98ef-045e897823e6)
 
 
 
