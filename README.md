@@ -54,6 +54,7 @@ We can Add lot more functionality to this Ecommerce Portal. Listed a few below f
     3. Add the sub-categories for the list in the Navigation Bar.
     4. Add Credit card authentication
     5. Allow different levels of access (i.e admin, subscriber, etc.)
+    6. Validation of username (Valid email, Unique for each user)
 
 ## ERD Diagram:
 
@@ -99,3 +100,30 @@ To be Added later
 ## Project management system:
 
 - We will be using Github Projects with Daily status updates, Via Teams
+
+## Front End
+
+- User login Page:
+
+  - Username textbox
+  - password textbox
+  - submit button
+  - register button
+  - Color palette
+
+- Main Shopping Page
+
+  - 2 Frames/Panels
+  - 1st one is navigation bar with list of Departments, Shopping cart icon along with displaying count of items in basket, Username, logout
+  - 2nd one, will list all the items/prodcuts for the selected Department
+  - 3rd (stretch goal), to add filters
+  - Color palette
+
+- Checkout Page
+  - 1 panel, listing all items in shopping cart, with total, submit/complete button
+  - Will open another panel at the bottom, to fill in the address details, which needs validation VIA external API
+  - color palette
+
+## Backend DB
+
+    - Lading tables with data.
