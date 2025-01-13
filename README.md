@@ -60,8 +60,6 @@ We can Add lot more functionality to this Ecommerce Portal. Listed a few below f
 
 ![E-Commerce ERD (2)](https://github.com/user-attachments/assets/73c1a68b-0c17-4828-98ef-045e897823e6)
 
-
-
 ## Controller API's:
 
 1. List all users (GET ALL)
@@ -105,7 +103,7 @@ To be Added later
 
 ## Front End
 
-- User login Page: (Ethan)
+- User login Page: (Ethan) -- login.jsx
 
   - Username textbox
   - password textbox
@@ -115,7 +113,7 @@ To be Added later
 
 - Main Shopping Page (Vavigation - Jude, itemlist - Vamsi)
 
-  - 2 Frames/Panels
+  - 2 Frames/Panels nav.jsx, shop.jsx
   - 1st one is navigation bar with list of Departments, Shopping cart icon along with displaying count of items in basket, Username, logout
   - 2nd one, will list all the items/prodcuts for the selected Department
   - 3rd (stretch goal), to add filters
