@@ -141,3 +141,34 @@ To be Added later
     - repository
     - data
     - Test cases
+
+## Frontend logic flow
+
+1. User goes to login page /login
+
+rest API call to Users (Get all users) --> not needed
+When the user enter login id/passwd, call getUserByID
+If issues, show message to user
+if success, move to /ShoppingPage
+
+2. We will see 2 panels/frames
+
+- Navigation panel:
+  REST API call to getAllDepartments()
+  List the departments in 1 row horizontally.
+  Add a cart symbol
+
+- Itemlist Panel:
+  Will display list of items, for selected department.
+  REST Call to getItemsByDepartmentID()
+  User can add items to the cart, by clicking "Add to Cart" button.
+  This action creates a List<ItemSOLD> javascript object, which needs to passed to /checkout page
+  Need to add +/- functinality of qunatity of items to add to checkout.
+  User clicks on checkout button, to complete shopping, which take user to /checkout
+
+- Checkout Page
+  User comes to /Checkout
+  It should display list of items bought as a summary and show the total cost.
+  For shipping, users will input address, that needs to be validated using 3rd party API.
+  Then user hits the complete purchase button.
+  This will call the REST API /CreateNEWOrder
