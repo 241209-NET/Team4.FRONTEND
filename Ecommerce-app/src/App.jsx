@@ -13,11 +13,10 @@ function App() {
 
   return (
     <>
-
         <BrowserRouter>
           <div /*ClassName={theme}*/ >
             <NavBar />
-            <h1>React Demo App!</h1>
+            <h1>Nav Title!</h1>
             <Routes>
 
               <Route path='/checkout' Component={Checkout}/>
@@ -27,8 +26,6 @@ function App() {
             
           </div>
         </BrowserRouter>
-
-      
     </>
   )
 }
