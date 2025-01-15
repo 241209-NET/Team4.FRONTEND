@@ -16,8 +16,17 @@ nav {
   margin-top: 0;
 }
 
-.checkoutlist {
+.checkout {
+  text-align: center;
   width: 50%; 
+  margin: auto;
+}
+
+body {
+  margin: 0; 
+}
+
+.checkoutList {
   margin: auto;
 }
 
@@ -44,6 +53,8 @@ nav a.active {
   background-color: #04AA6D;
   color: white;
 }
+
+
 
 
 /* Initial React CSS - preserved in case we want

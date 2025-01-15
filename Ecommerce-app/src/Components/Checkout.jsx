@@ -72,24 +72,29 @@ function Checkout() {
  
  
    return (
-     <div className="checkoutlist">
-         <h2>Checkout Cart</h2>
-         <h3>Placeholder Item Checkout List</h3>
-         <ul>
-            <li>Example Item 1</li>
-            <li>Example Item 2</li>
-            <li>Example Item 3</li>
-            <li>Example Item 4</li>
-         </ul>
+     <div className="checkout">
 
-         <div>
-            <input 
-                type="submit" 
-                value="Checkout"
-                onClick={handleCheckout}
-                hidden={!isHidden}
-                //placeholder='Enter pokemon to search for'
-            />
+        <div className="checkoutList">
+            
+            <h2>Checkout Cart</h2>
+            <h3>Placeholder Item Checkout List</h3>
+            <ul>
+                <li>Example Item 1</li>
+                <li>Example Item 2</li>
+                <li>Example Item 3</li>
+                <li>Example Item 4</li>
+            </ul>
+
+            <div>
+                <input 
+                    type="submit" 
+                    value="Checkout"
+                    onClick={handleCheckout}
+                    hidden={!isHidden}
+                    //placeholder='Enter pokemon to search for'
+                />
+            </div>
+
          </div>
 
         <div className="AddressCheckout" hidden={isHidden}>
