@@ -19,7 +19,6 @@ function App() {
         <BrowserRouter>
           <div /*ClassName={theme}*/ >
             <NavBar />
-            <h1>Nav Title!</h1>
             <Routes>
 
               <Route path='/checkout' Component={Checkout}/>

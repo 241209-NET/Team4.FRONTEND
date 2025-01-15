@@ -15,37 +15,6 @@ function Checkout() {
 
      const [pokemonToFind, setPokemonToFind] = useState(1); //By default, it loads Bulbasaur 
      const [pokemonData, setPokemonData] = useState(null); //By default, before the user searches this is null
- 
-     //Setting up our useEffect to fetch pokemon data when component mounts OR when it re-renders
-     useEffect(() => {
-         
-         //This is a function that I will call to send that GET request to the pokeAPI
-         const fetchPokemonData = async () => {
-             try{
-                 //First we try to get a response from pokeAPI
-                 const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonToFind}`); 
-                 
-                 setPokemonData({
-                     name: response.data.name,
-                     sprite: response.data.sprites.front_default,
-                     types: response.data.types.map((typeInfo) => typeInfo.type.name).join(', '),
-                 });
- 
-             } catch (error) {
-                 console.error('Error fetching Pokemon data:', error)
-                 setPokemonData(null);
-             }
-         };
-
-         //Here we just call the function
-         //fetchPokemonData();
-
-         
- 
-         
- 
-     }, [pokemonToFind]); // UseEffect exepcts a dependency array as a second argument.
-     //Even if you have none, omitting this can result in an infinite loop. 
 
      const fetchAddressData = async () => {
         try{
@@ -82,10 +51,8 @@ function Checkout() {
             setAddressData(null); 
         }
     };
- 
-     const handleInputChange = (event) => {
-         setPokemonToFind(event.target.value);
-     }
+
+    //Setter functions of address input fields
 
      const handleCheckout = () => {
         setIsHidden(!isHidden); 
@@ -105,7 +72,7 @@ function Checkout() {
  
  
    return (
-     <div>
+     <div className="checkoutlist">
          <h2>Checkout Cart</h2>
          <h3>Placeholder Item Checkout List</h3>
          <ul>
