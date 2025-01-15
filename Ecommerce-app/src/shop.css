@@ -1,0 +1,14 @@
+.itemrow {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    /* align-items: center; */
+}
+
+.main-div {
+    text-align: center;
+}
+
+#item-q {
+    width: 20px;
+}
