@@ -9,6 +9,8 @@ function NavBar() {
             <li><Link to='/checkout'>Checkout</Link></li>
             {/* Link to my Login component */}
             <li><Link to='/login'>Login</Link></li>
+            {/* Link to my Department component */}
+            <li><Link to='/department'>Department</Link></li>
         </ul>
     </nav>
   )

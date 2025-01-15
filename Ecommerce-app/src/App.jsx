@@ -7,6 +7,9 @@ import NavBar from './Components/NavBar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import './App.css'
+import Department from './Components/Department'
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +24,7 @@ function App() {
 
               <Route path='/checkout' Component={Checkout}/>
               <Route path='/login' Component={Login}/>
+              <Route path='/department' Component={Department}/>
 
             </Routes>
             
