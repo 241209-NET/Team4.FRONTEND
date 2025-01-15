@@ -10,9 +10,19 @@ const providers = [{ id: 'credentials', name: 'Email and Password' }];
 const signIn = async (provider, formData) => {
   const promise = new Promise((resolve) => {
     setTimeout(() => {
+      // need to add the sign-in handling where the alert is
+      if (LoginAPI(formData.get('email'), formData.get('password')))
+      {
       alert(
         `Signing in with "${provider.name}" and credentials: ${formData.get('email')}, ${formData.get('password')}`,
       );
+      }
+      else
+      {
+        alert(
+          `Invalid username or password`,
+        );
+      }
       resolve();
     }, 300);
   });
@@ -32,4 +42,11 @@ export default function CredentialsSignInPage() {
     </AppProvider>
     // preview-end
   );
+}
+
+function LoginAPI(username, password){
+  if ((username == "a@b.com") & (password == 1234)){
+    return true;
+  }
+  return false;
 }
