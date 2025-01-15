@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
+import ListOfItemsDetails from "./ShoppingList";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -54,6 +55,7 @@ export default function Department() {
       </Box>
       <CustomTabPanel value={value} index={0}>
       item list Department  1
+      {ListOfItemsDetails()}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
       item list Department  2
