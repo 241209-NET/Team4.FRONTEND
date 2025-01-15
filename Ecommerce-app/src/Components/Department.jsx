@@ -48,9 +48,15 @@ export default function Department() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Department 1" {...a11yProps(0)} />
-          <Tab label="Department 2" {...a11yProps(1)} />
-          <Tab label="Department 3" {...a11yProps(2)} />
+          //maybe need to change this to read department names but for now manually entering them should be fine
+          <Tab label="Books" {...a11yProps(0)} />
+          <Tab label="Electronics" {...a11yProps(1)} />
+          <Tab label="Kitchen" {...a11yProps(2)} />
+          <Tab label="Toiletries" {...a11yProps(3)} />
+          <Tab label="Clothing" {...a11yProps(4)} />
+          <Tab label="Furniture" {...a11yProps(5)} />
+          <Tab label="Groceries" {...a11yProps(6)} />
+          <Tab label="Pharmacy" {...a11yProps(7)} />
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
