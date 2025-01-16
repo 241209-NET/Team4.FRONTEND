@@ -1,4 +1,4 @@
-.itemrow {
+.itemrow, .cartrow {
     /* display: flex; */
     /* justify-content: center; */
     gap: 2rem;
@@ -7,8 +7,18 @@
     border: 1px solid #ddd;
 }
 
+.maincontainer {
+    display: flex;
+    gap: 2rem;
+}
+
+.container2 {
+    max-width: 100ch;
+}
+
 .main-div {
     text-align: center;
+    gap: 2 rem;
 }
 
 span {
