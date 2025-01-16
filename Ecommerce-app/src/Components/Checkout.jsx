@@ -4,7 +4,23 @@ import { CartContext } from "./cart";
 
 function Checkout() {
 
-    const { cartItems, setCartItems } = useContext(CartContext);
+    const { cartItems, setCartItems, clearcart} = useContext(CartContext);
+
+    /*
+    useEffect( () => {
+        const cartItems = localStorage.getItem("cartItems");
+        if(cartItems){
+            setCartItems(JSON.parse(cartItems));
+        }
+    }, cartItems);*/
+
+    useEffect( () => {
+        const cartItems = localStorage.getItem("cartItems");
+        if(cartItems){
+            setCartItems(JSON.parse(cartItems));
+        }
+    }, []);
+ 
 
      //Setting up state variables
     const [isHidden, setIsHidden] = useState(true); 
