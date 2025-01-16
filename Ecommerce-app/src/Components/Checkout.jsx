@@ -1,10 +1,10 @@
 import React, {useState, useEffect, useContext} from "react"
 import axios from "axios"
+import { CartContext } from "./cart";
 
+function Checkout() {
 
- 
-
-function Checkout() {; 
+    const { cartItems, setCartItems } = useContext(CartContext);
 
      //Setting up state variables
     const [isHidden, setIsHidden] = useState(true); 
@@ -24,16 +24,19 @@ function Checkout() {;
 
     let totalCost = 0; 
 
-    //var shopping_cart = [{itemName: "test Name 1", itemId: 5, itemPrice: 10.94, quantitySold: 2},{itemName: "Super extra long test Name 2", itemId: 1, itemPrice: 9.94, quantitySold: 1}]; 
+    //cartItems = [{itemName: "test Name 1", itemId: 5, itemPrice: 10.94, quantitySold: 2},{itemName: "Super extra long test Name 2", itemId: 1, itemPrice: 9.94, quantitySold: 1}]; 
     
-    shopping_cart.map((item) => {
-        totalCost += item.quantitySold * item.itemPrice; 
+    cartItems.map((item) => {
+        totalCost += item.quantity * item.price; 
     })
+
+    let formatCost = totalCost.toFixed(2);
     
-    const simplified = shopping_cart.map(item => ({
+    const simplified = cartItems.map(item => ({
         'itemId_FK': item.itemId,
-        'quantitySold': item.quantitySold
+        'quantitySold': item.quantity
     }))
+
     const postCreateOrder = async () => {
         //let addressString = addressData.street + " " + addressData.city + " " + addressData.state + " " + addressData.zipcode; 
         //let dateNow = new Date(); 
@@ -127,6 +130,8 @@ function Checkout() {;
                         zipcode: response.data[0].components.zipcode,
                     }); 
                     setVerified(true); 
+                    //etCartItems([]); 
+                    clearcart(); 
                     //postCreateOrder(); 
                 }else{
                     setUnverified(true); 
@@ -165,6 +170,8 @@ function Checkout() {;
  
  
    return (
+        
+    
      <div className="checkout">
 
         <div className="checkoutList">
@@ -172,13 +179,13 @@ function Checkout() {;
             <h1>Checkout Cart</h1>
             <ul id="checkoutList">
             {
-                shopping_cart.map((item, index) => (
-                    <li key={index}>{item.itemName}............... {item.quantitySold} x ${item.itemPrice} = {item.quantitySold*item.itemPrice}</li>
+                cartItems.map((item, index) => (
+                    <li key={index}>{item.name}...................................... {item.quantity} x ${item.price} = ${(item.quantity*item.price).toFixed(2)}</li>
                 ))  
                 
             }
             <br></br>
-            <li><b>Cart Total: ${totalCost}</b></li>
+            <li><b>Cart Total: ${formatCost}</b></li>
             </ul>
 
             <div>
