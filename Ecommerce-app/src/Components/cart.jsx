@@ -93,7 +93,7 @@ export const CartProvider = ({ children }) =>  {
         () => {
             // cartItems.length == 0 ? cartItems : localStorage.setItem("cartItems", JSON.stringify(cartItems));
             if (cartItems.length !== 0) localStorage.setItem("cartItems", JSON.stringify(cartItems));
-            //if (cartItems.length === 0) localStorage.removeItem("cartItems");
+            // if (cartItems.length === 0) localStorage.removeItem("cartItems");
         }, [cartItems]
     );
 
