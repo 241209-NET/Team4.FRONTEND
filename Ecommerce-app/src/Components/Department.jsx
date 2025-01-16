@@ -60,11 +60,12 @@ export default function Department() {
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-      item list Department  1
-      {ListOfItemsDetails()}
+      item list Department  1      
+      {ListOfItemsDetails(1)}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
       item list Department  2
+      {ListOfItemsDetails(2)}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
       item list Department 3
