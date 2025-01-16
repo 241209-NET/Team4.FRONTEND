@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, createContext, useContext } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Checkout from './Components/Checkout'
@@ -13,12 +13,14 @@ import Tab from '@mui/material/Tab';
 
 function App() {
   const [count, setCount] = useState(0)
+  
 
   return (
     <>
         <BrowserRouter>
           <div /*ClassName={theme}*/ >
             <NavBar />
+            
             <Routes>
 
               <Route path='/checkout' Component={Checkout}/>
