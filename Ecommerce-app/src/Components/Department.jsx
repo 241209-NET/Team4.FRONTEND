@@ -76,35 +76,35 @@ export default function Department() {
         </Tabs>
       </Box>
       <CustomTabPanel value={value} index={0}>
-      item list Department  1      
+      {/* item list Department  1       */}
       {ListOfItemsDetails(1)}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={1}>
-      item list Department  2
+      {/* item list Department  2 */}
       {ListOfItemsDetails(2)}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
-      item list Department 3
+      {/* item list Department 3 */}
       {ListOfItemsDetails(3)}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={3}>
-      item list Department 4
+      {/* item list Department 4 */}
       {ListOfItemsDetails(4)}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={4}>
-      item list Department 5
+      {/* item list Department 5 */}
       {ListOfItemsDetails(5)}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={5}>
-      item list Department 6
+      {/* item list Department 6 */}
       {ListOfItemsDetails(6)}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={6}>
-      item list Department 7
+      {/* item list Department 7 */}
       {ListOfItemsDetails(7)}
       </CustomTabPanel>
       <CustomTabPanel value={value} index={7}>
-      item list Department 8
+      {/* item list Department 8 */}
       {ListOfItemsDetails(8)}
       </CustomTabPanel>
     </Box>
