@@ -18,7 +18,11 @@ nav {
 
 .checkout {
   text-align: center;
-  width: 60%; 
+  width: 75%; 
+  margin: auto;
+}
+
+.checkout li {
   margin: auto;
 }
 

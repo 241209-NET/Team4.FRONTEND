@@ -14,12 +14,12 @@ function Checkout() {
         }
     }, cartItems);*/
 
-    useEffect( () => {
-        const cartItems = localStorage.getItem("cartItems");
-        if(cartItems){
-            setCartItems(JSON.parse(cartItems));
-        }
-    }, []);
+    // useEffect( () => {
+    //     const cartItems = localStorage.getItem("cartItems");
+    //     if(cartItems){
+    //         setCartItems(JSON.parse(cartItems));
+    //     }
+    // }, []);
  
 
      //Setting up state variables
@@ -29,7 +29,7 @@ function Checkout() {
     const [inputStreet, setInputStreet] = useState(''); 
     const [inputCity, setInputCity] = useState(''); 
     const [inputState, setInputState] = useState(''); 
-    const [inputZipcode, setZipcodeState] = useState(""); 
+    const [inputZipcode, setZipcodeState] = useState(''); 
 
     const [addressData, setAddressData] = useState(null); 
 
@@ -85,9 +85,16 @@ function Checkout() {
         }
     };
 
-    /*
+
     useEffect(() => {
+        const cartItems = localStorage.getItem("cartItems");
+        if(cartItems){
+            setCartItems(JSON.parse(cartItems));
+        }
+
+        if(inputState){
         const getZipcode = setTimeout(() => {
+            
             const zipResponse = axios.get(`https://us-street.api.smarty.com/street-address`, {
                 params: {
                     street: inputStreet,
@@ -98,24 +105,25 @@ function Checkout() {
             }).then((zipResponse) => {
                 console.log(zipResponse); 
                 if(zipResponse.data.length > 0){
-                    setAutoZipcode({
-                        zipcode: zipResponse.data[0].components.zipcode,
-                    }); 
+                    setZipcodeState(zipResponse.data[0].components.zipcode); 
+                    // setAutoZipcode({
+                    //     zipcode: zipResponse.data[0].components.zipcode,
+                    // }); 
                 }
                 if(zipResponse.data.length == 0){
                     console.log(autoZipcode)
                     console.log("Wrong")
                     setZipcodeState(''); 
-                }else{
-                    //setZipcodeState(autoZipcode.zipcode); 
-                }
+                 }//else{
+                //     setZipcodeState(autoZipcode.zipcode); 
+                // }
             }); 
 
         }, 1000)
 
         return () => clearTimeout(getZipcode)
-
-    }, [inputState]); */
+    }
+    }, [inputState]); 
 
 
 
@@ -148,7 +156,7 @@ function Checkout() {
                     setVerified(true); 
                     //etCartItems([]); 
                     clearcart(); 
-                    //postCreateOrder(); 
+                    postCreateOrder(); 
                 }else{
                     setUnverified(true); 
                 }
@@ -163,8 +171,7 @@ function Checkout() {
     //Setter functions of address input fields
      const handleCheckout = () => {
         //api call Create New Order
-        postCreateOrder(); 
-
+        //postCreateOrder(); 
         setIsHidden(!isHidden); 
      }
 
