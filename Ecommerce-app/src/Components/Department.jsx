@@ -5,6 +5,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import ListOfItemsDetails from "./ShoppingList";
+// import { useEffect } from 'react';
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -41,6 +42,21 @@ export default function Department() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+  
+  // const [items, setItems] = useState([]);
+
+  // useEffect(
+  //         () => {
+  //             const itemdata = async () => {
+  //                 const itemurl = "http://localhost:5231/api/Item"
+  //                 const itemresponse = await fetch(itemurl);
+  //                 const resjson = await itemresponse.json();
+  //                 setItems(resjson);
+  //             };
+  //             itemdata();
+  //             console.log(items);
+  //         }
+  //         ,[]);
 
   return (
     <div>
@@ -48,7 +64,7 @@ export default function Department() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          //maybe need to change this to read department names but for now manually entering them should be fine
+          {/* //maybe need to change this to read department names but for now manually entering them should be fine */}
           <Tab label="Books" {...a11yProps(0)} />
           <Tab label="Electronics" {...a11yProps(1)} />
           <Tab label="Kitchen" {...a11yProps(2)} />
@@ -69,6 +85,27 @@ export default function Department() {
       </CustomTabPanel>
       <CustomTabPanel value={value} index={2}>
       item list Department 3
+      {ListOfItemsDetails(3)}
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+      item list Department 4
+      {ListOfItemsDetails(4)}
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+      item list Department 5
+      {ListOfItemsDetails(5)}
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+      item list Department 6
+      {ListOfItemsDetails(6)}
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+      item list Department 7
+      {ListOfItemsDetails(7)}
+      </CustomTabPanel>
+      <CustomTabPanel value={value} index={2}>
+      item list Department 8
+      {ListOfItemsDetails(8)}
       </CustomTabPanel>
     </Box>
     </div>

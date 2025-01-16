@@ -10,12 +10,14 @@ import './App.css'
 import Department from './Components/Department'
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import { CartProvider } from './Components/cart'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      {/* <CartProvider> */}
         <BrowserRouter>
           <div /*ClassName={theme}*/ >
             <NavBar />
@@ -29,6 +31,7 @@ function App() {
             
           </div>
         </BrowserRouter>
+      {/* </CartProvider> */}
     </>
   )
 }
