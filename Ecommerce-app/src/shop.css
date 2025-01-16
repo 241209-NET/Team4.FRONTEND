@@ -1,14 +1,26 @@
 .itemrow {
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
     gap: 2rem;
     /* align-items: center; */
+    max-width: 100ch;
+    border: 1px solid #ddd;
 }
 
 .main-div {
     text-align: center;
 }
 
-#item-q {
+input {
     width: 20px;
+}
+
+span {
+    width: 3%;
+    text-align: center;
+}
+
+.qty {
+    display: flex;
+    gap: 2 rem;
 }

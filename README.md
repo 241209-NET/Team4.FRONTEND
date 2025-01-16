@@ -172,3 +172,16 @@ if success, move to /ShoppingPage
   For shipping, users will input address, that needs to be validated using 3rd party API.
   Then user hits the complete purchase button.
   This will call the REST API /CreateNEWOrder
+
+## Javascript Object
+
+- Input
+  [{item1,q1},{item2,q2}] --> shopping_cart
+
+- Output
+  {
+  userid: "",
+  date: "",
+  List<ItemsSold>:
+
+}
