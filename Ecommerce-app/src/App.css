@@ -74,6 +74,25 @@ nav a.active {
   color: white; 
 }
 
+#LoginPage{
+  display: flex;
+  justify-content: space-evenly;
+  background-color:cornsilk;
+}
+
+#greeting{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#welcome{
+  
+}
+
+
+
 
 
 /* Initial React CSS - preserved in case we want
