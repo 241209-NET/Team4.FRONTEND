@@ -14,7 +14,7 @@ export const CartProvider = ({ children }) =>  {
         console.log(localStorage.length);
 
         const isItemInCart = cartItems.some(item => item.itemId === item_tobe_added.itemId);
-        console.log("########### Check if item exists ##########")
+        console.log("########### Check if item exists while adding to cart ##########")
         console.log(isItemInCart)
 
         if (isItemInCart){
@@ -40,15 +40,24 @@ export const CartProvider = ({ children }) =>  {
     const remove_from_cart = (item_to_be_removed) => {
         
         const isItemInCart = cartItems.find(item => item.itemId === item_to_be_removed.itemId);
+        console.log("########### Check if item exists while removing from cart ##########")
+        console.log(isItemInCart)
 
-        if (isItemInCart.quantity === 1){
+        if (isItemInCart.quantity === 1 ){
             setCartItems(cartItems.filter(item => item.itemId !== item_to_be_removed.itemId))
+            console.log("After deleting item from cart completely ......")
+            console.log(setCartItems);
         } else {
             setCartItems(
-                cartItems.map(item => item.itemId === item_to_be_removed.itemId ? { ...cartItems, quantity: item.quantity - 1} : item)
+                cartItems.map(item => {
+                    if (item.itemId === item_to_be_removed.itemId){
+                        item.quantity -= 1;
+                    }
+                    return item;
+                })        
+            
             )
-        }
-        
+        }        
     };
 
     const clearcart = () => {
