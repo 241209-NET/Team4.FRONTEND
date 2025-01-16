@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      {/* <CartProvider> */}
+      <CartProvider>
         <BrowserRouter>
           <div /*ClassName={theme}*/ >
             <NavBar />
@@ -33,7 +33,7 @@ function App() {
             
           </div>
         </BrowserRouter>
-      {/* </CartProvider> */}
+      </CartProvider>
     </>
   )
 }

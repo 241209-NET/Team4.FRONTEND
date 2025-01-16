@@ -1,6 +1,11 @@
 import { createContext, useState, useEffect } from "react";
 
-export const CartContext = createContext();
+export const CartContext = createContext({
+    clearcart: () =>  {
+            setCartItems([]);
+            localStorage.setItem("cartItems", JSON.stringify(cartItems));
+        }
+});
 
 export const CartProvider = ({ children }) =>  {
 
@@ -33,6 +38,8 @@ export const CartProvider = ({ children }) =>  {
         } else {
             setCartItems([ ...cartItems, { ...item_tobe_added, quantity: 1}]);
         }
+
+        window.dispatchEvent(new Event("storage"));
             
             
     }; 
