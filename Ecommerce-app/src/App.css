@@ -54,6 +54,21 @@ nav a.active {
   color: white;
 }
 
+#checkoutList {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: right;
+}
+
+#deliveryTitle {
+  text-align: left;
+}
+
+#unverified{
+  background-color: #ff4f0d;
+  color: white; 
+}
 
 
 
