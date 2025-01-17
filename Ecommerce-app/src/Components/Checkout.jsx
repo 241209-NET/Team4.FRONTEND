@@ -168,7 +168,7 @@ function Checkout() {
     return (
         
         <div className="checkout">
-
+        
             <div className="checkoutList">
 
                 <h1>Checkout Cart</h1>
