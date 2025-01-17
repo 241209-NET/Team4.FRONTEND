@@ -21,11 +21,12 @@ function App() {
         {(window.location.href.includes("/Department")
          || window.location.href.includes("/checkout")) 
          && !window.location.href.includes("/login") && <NavBar/>}
+         
           <div /*ClassName={theme}*/ >
             <Routes>
 
               <Route path='/checkout' Component={Checkout}/>
-              <Route path='/login' Component={Login} />
+              <Route exact path='/' Component={Login} />
               <Route path='/Department' Component={Department}/>
 
             </Routes>
