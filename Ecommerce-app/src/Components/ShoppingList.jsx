@@ -19,7 +19,7 @@ function AllItemDetails({deptid}){
     useEffect(
         () => {
             const itemdata = async () => {
-                const itemurl = "http://localhost:5231/api/Item"
+                const itemurl = "https://revecommerce.azurewebsites.net/api/Item"
                 const itemresponse = await fetch(itemurl);
                 const resjson = await itemresponse.json();
                 setItems(resjson);
