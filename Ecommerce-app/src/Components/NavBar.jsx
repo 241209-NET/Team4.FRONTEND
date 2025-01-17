@@ -17,7 +17,7 @@ function NavBar() {
 }
 
 function toLogin(){
-  window.location.href = "/login"
+  window.location.href = "/"
 }
 function toDept(){
   window.location.href = "/Department"
