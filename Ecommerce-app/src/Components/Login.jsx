@@ -17,7 +17,7 @@ const SignIn = async (_, formData) => {
         alert('Either Password or Email is Empty!');
         return;
       }
-      const response = await axios.get(`http://localhost:5231/User/username/${email}`);
+      const response = await axios.get(`https://revecommerce.azurewebsites.net/User/username/${email}`);
 
       if(!response.data){
         alert('User not found'); 
@@ -48,7 +48,7 @@ const NewAccount = async ( _, formData) => {
         return;
       }
 
-      const response = await axios.post('http://localhost:5231/User', {
+      const response = await axios.post('https://revecommerce.azurewebsites.net/User', {
           username: email,
           password: password
       });
