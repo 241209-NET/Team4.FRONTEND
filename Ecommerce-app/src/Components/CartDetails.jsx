@@ -26,7 +26,7 @@ function DisplayCartDetails(){
     return(
         
         <div>
-            <h1> Cart Details</h1>
+            <h1> Shopping Cart Details</h1>
             {
                 
                 cartItems.map(
