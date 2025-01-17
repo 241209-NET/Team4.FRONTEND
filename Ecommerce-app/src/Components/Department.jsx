@@ -60,7 +60,6 @@ export default function Department() {
 
   return (
     <div id = "departmentHeader">
-        <h1 id = "DeptHeader" >Department List</h1>
     <Box sx={{ width: '100%' }}>
       <Box  id = "departments" sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">

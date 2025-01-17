@@ -8,7 +8,7 @@ function NavBar() {
         {/* Link to my Login component */}
         <button onClick={toLogin}>Log Out </button>
         {/* Link to my Department component */}
-        <button onClick={toDept}>Department</button>
+        <button onClick={toDept}>Shop</button>
         {/* Link to my Checkout component */}
         <button onClick={toCheck}>Checkout</button>
 
