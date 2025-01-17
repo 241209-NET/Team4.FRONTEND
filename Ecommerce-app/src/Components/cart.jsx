@@ -45,6 +45,10 @@ export const CartProvider = ({ children }) =>  {
     }; 
 
     const remove_from_cart = (item_to_be_removed) => {
+
+        if (cartItems.length === 1 && cartItems[0].quantity === 1){
+            localStorage.removeItem("cartItems");
+        }
         
         const isItemInCart = cartItems.find(item => item.itemId === item_to_be_removed.itemId);
         console.log("########### Check if item exists while removing from cart ##########")
