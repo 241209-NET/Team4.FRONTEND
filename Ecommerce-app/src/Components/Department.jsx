@@ -59,10 +59,10 @@ export default function Department() {
   //         ,[]);
 
   return (
-    <div>
-        <h1>Department List</h1>
+    <div id = "departmentHeader">
+        <h1 id = "DeptHeader" >Department List</h1>
     <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+      <Box  id = "departments" sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           {/* //maybe need to change this to read department names but for now manually entering them should be fine */}
           <Tab label="Books" {...a11yProps(0)} />

@@ -13,21 +13,20 @@ import Tab from '@mui/material/Tab';
 import { CartProvider } from './Components/cart'
 
 function App() {
-  const [count, setCount] = useState(0)
-  
 
   return (
     <>
       <CartProvider>
         <BrowserRouter>
+        {(window.location.href.includes("/Department")
+         || window.location.href.includes("/checkout")) 
+         && !window.location.href.includes("/login") && <NavBar/>}
           <div /*ClassName={theme}*/ >
-            <NavBar />
-            
             <Routes>
 
               <Route path='/checkout' Component={Checkout}/>
-              <Route path='/login' Component={Login}/>
-              <Route path='/department' Component={Department}/>
+              <Route path='/login' Component={Login} />
+              <Route path='/Department' Component={Department}/>
 
             </Routes>
             

@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom';
 // preview-start
 const providers = [{ id: 'credentials', name: 'Email and Password' }];
 // preview-end
-
 const SignIn = async (_, formData) => {
 
   try{
@@ -31,12 +30,13 @@ const SignIn = async (_, formData) => {
       }
 
       if(response.data){
-        //need to nav to another page
+        window.location.href = '/Department';
       } else {
           alert("SomeError")
       }
     } catch(TypeError){}
 }
+
 
 const NewAccount = async ( _, formData) => {
 
@@ -61,7 +61,7 @@ const NewAccount = async ( _, formData) => {
   }   catch(TypeError){}
 };
 
-export default function CredentialsSignInPage() {
+export default function CredentialsSignInPage({handleLogin}) {
   const theme = useTheme();
 
   return (
@@ -109,13 +109,13 @@ function RegisterAPI(username, password) {
 
 function CreateAccount(){
   return (
-    <Button type="submit" onClick={NewAccount}>Create Account</Button>
+    <Button id = "loginButton1" type="submit" onClick={NewAccount}>Create Account</Button>
   );
 }
 
 function Login(){
   return (
-    <Button type="submit" onClick={SignIn}>Sign In</Button>
+    <Button id = "loginButton2"type="submit" onClick={SignIn}>Start Shopping?</Button>
   );
 }
 

@@ -3,17 +3,26 @@ import { Link } from 'react-router-dom'
 
 function NavBar() {
   return (
-    <nav>
+    <nav id = "navBar">
         
         {/* Link to my Login component */}
-        <Link to='/login'>Login</Link>
+        <button onClick={toLogin}>Log Out </button>
         {/* Link to my Department component */}
-        <Link to='/department'>Department</Link>
+        <button onClick={toDept}>Department</button>
         {/* Link to my Checkout component */}
-        <Link to='/checkout'>Checkout</Link>
-        
+        <button onClick={toCheck}>Checkout</button>
+
     </nav>
   )
 }
 
+function toLogin(){
+  window.location.href = "/login"
+}
+function toDept(){
+  window.location.href = "/Department"
+}
+function toCheck(){
+  window.location.href = "/checkout"
+}
 export default NavBar

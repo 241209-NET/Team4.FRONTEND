@@ -217,6 +217,7 @@ function Checkout() {
                     value="Checkout"
                     onClick={handleCheckout}
                     hidden={!isHidden}
+                    className = "checkoutButton"
                     //placeholder='Enter pokemon to search for'
                 />
             </div>
@@ -279,6 +280,7 @@ function Checkout() {
                 type="submit" 
                 value="Confirm Address"
                 onClick={fetchAddressData}
+                className="checkoutButton"
                 //placeholder='Enter pokemon to search for'
             />
         </div>

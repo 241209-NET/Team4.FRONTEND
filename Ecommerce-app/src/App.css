@@ -87,8 +87,49 @@ nav a.active {
   justify-content: center;
 }
 
-#welcome{
-  
+button, .checkoutButton, #loginButton1, #loginButton2 {
+  background-color: #4CAF50; 
+  border: none; 
+  color: white; 
+  padding: 15px 32px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 16px; 
+  margin: 4px 2px; 
+  cursor: pointer; 
+  border-radius: 4px; 
+}
+
+button:hover, .checkoutButton:hover, #loginButton1:hover, #loginButton2:hover { 
+  background-color: darkgreen;
+ }
+
+#navBar{
+  display: flex;
+  justify-content: space-evenly;
+}
+/* #departmentList */
+#departmentHeader {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+#DeptHeader,#departmentHeader{
+  background: white;
+}
+#departments{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: cornsilk;
+
+}
+.itemrow{
+  background: white;
 }
 
 

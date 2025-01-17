@@ -43,7 +43,7 @@ function AllItemDetails({deptid}){
     })
 
     return (
-        <div>
+        <div >
             
                 {
                     newitems.map(
@@ -83,7 +83,7 @@ export function ListOfItemsDetails(deptid){
     return (
         <>
         {/* <AllItemDetails /> */}
-        <div>
+        <div id = "departmentList">
             {/* {ProductList} */}
             <CartProvider> 
                 <div className='maincontainer'>
