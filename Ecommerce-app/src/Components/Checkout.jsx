@@ -190,98 +190,78 @@ function Checkout() {
                     onClick={handleCheckout}
                     hidden={!isHidden}
                     className = "checkoutButton"
-                    //placeholder='Enter pokemon to search for'
                 />
             </div>
 
             </div>
 
             <div className="AddressCheckout" hidden={isHidden}>
-            <div hidden={addressVerified}>
-                <br></br>
-                <h4 id="deliveryTitle">Enter delivery address: </h4>
-                <br></br>
-                <label htmlFor="streetaddress">Street Address:</label><br></br>
-                <input 
-                    type="text" 
-                    id="streeaddress"
-                    name="streetaddress"
-                    value={inputStreet}
-                    onChange={handleStreetChange}
-                    placeholder='Enter Street Address'
-                />
-                <br></br><br></br>
+                <div hidden={addressVerified}>
+                    <br></br>
+                    <h4 id="deliveryTitle">Enter delivery address: </h4>
+                    <br></br>
+                    <label htmlFor="streetaddress">Street Address:</label><br></br>
+                    <input 
+                        type="text" 
+                        id="streeaddress"
+                        name="streetaddress"
+                        value={inputStreet}
+                        onChange={handleStreetChange}
+                        placeholder='Enter Street Address'
+                    />
+                    <br></br><br></br>
 
-                <label htmlFor="city">City:</label><br></br>
-                <input 
-                    type="text" 
-                    id="city"
-                    name="city"
-                    value={inputCity}
-                    onChange={handleCityChange}
-                    placeholder='Enter City'
-                />
-                <br></br><br></br>
+                    <label htmlFor="city">City:</label><br></br>
+                    <input 
+                        type="text" 
+                        id="city"
+                        name="city"
+                        value={inputCity}
+                        onChange={handleCityChange}
+                        placeholder='Enter City'
+                    />
+                    <br></br><br></br>
 
-                <label htmlFor="stateaddress">State:</label><br></br>
-                <input 
-                    type="text" 
-                    id="stateaddress"
-                    name="stateaddress"
-                    value={inputState}
-                    onChange={handleStateChange}
-                    placeholder='Enter State'
-                />
-                <br></br><br></br>
+                    <label htmlFor="stateaddress">State:</label><br></br>
+                    <input 
+                        type="text" 
+                        id="stateaddress"
+                        name="stateaddress"
+                        value={inputState}
+                        onChange={handleStateChange}
+                        placeholder='Enter State'
+                    />
+                    <br></br><br></br>
 
-                <label htmlFor="zipcode">Zipcode:</label><br></br>
-                <input 
-                    type="text" 
-                    id="zipcode"
-                    name="zipcode"
-                    value={inputZipcode}
-                    onChange={handleZipcodeChange}
-                    placeholder='Enter Zipcode'
-                />
-                <br></br><br></br>
-                <div hidden={!isUnverified} id="unverified">
-                    <h3>Your address could not be verified, please check and enter again</h3>
-                </div>
+                    <label htmlFor="zipcode">Zipcode:</label><br></br>
+                    <input 
+                        type="text" 
+                        id="zipcode"
+                        name="zipcode"
+                        value={inputZipcode}
+                        onChange={handleZipcodeChange}
+                        placeholder='Enter Zipcode'
+                    />
+                    <br></br><br></br>
+                    <div hidden={!isUnverified} id="unverified">
+                        <h3>Your address could not be verified, please check and enter again</h3>
+                    </div>
 
-            <input 
-                type="submit" 
-                value="Confirm Address"
-                onClick={fetchAddressData}
-                className="checkoutButton"
-                //placeholder='Enter pokemon to search for'
-            />
-        </div>
+                <input 
+                    type="submit" 
+                    value="Confirm Address"
+                    onClick={fetchAddressData}
+                    className="checkoutButton"
+                />
+            </div>
          </div>
  
-         {/* Conditionally render the pokeData if any has ben returned */}
          {
                  <div hidden={!addressVerified} style={{backgroundColor: '#66FF99'}}>
                      <h3>Your Address has been verified... Checkout Successful!</h3>
                  </div>
          
-         }
-
- {/* 
-        {
-             addressToRetrieve ? (
-                 <div>
-                     <h3>{addressToRetrieve.city}</h3>
-                     <h3>{addressToRetrieve.state}</h3>
-                 </div>
-             ) : (
-                 <div>
-                     <p>Loading address data...</p>
-                 </div>
-             )
-         }  */}
-             
- 
- 
+         }   
  
      </div>
    )
